@@ -1,27 +1,3 @@
-{/*import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import './App.css'
-import AppLayout  from './Layouts/app-layout';
-import LandingPage from './pages/landing';
-import Onboarding from './pages/onboarding';
-import JobListing from './pages/job-listing';
-import JobPage from './pages/job';
-import PostJob from './pages/post-job.jsx';
-import SavedJobs from './pages/saved-jobs';
-import MyJobs from './pages/my-jobs';
-import { ThemeProvider } from "./components/theme-provider"
-import ProtectedRoute from './components/protected-route';
-
-function App() {
-  return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-    
-    <RouterProvider router={router}/>
-    </ThemeProvider>
-  )
-}
-
-export default App
-*/}
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import "./App.css";
 import AppLayout from './Layouts/app-layout.jsx';

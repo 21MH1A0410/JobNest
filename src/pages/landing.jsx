@@ -42,8 +42,7 @@ const LandingPage = () => {
        plugins ={[Autoplay({delay: 2000})]}
        className="w-full py-2">
         <CarouselContent className="flex gap-5 sm:gap-20 items-center">
-          {companies.map(({name,path,id})=>{
-            return(
+          {companies.map(({name,path,id})=>(
               <CarouselItem key={id} className="basis-1/3 lg:basis-1/6">
                 <img 
                   src={path} 
@@ -51,8 +50,8 @@ const LandingPage = () => {
                   className="h-9 sm:h-14 object-contain"
                 />
               </CarouselItem>
-            );
-          })}
+            
+          ))}
         </CarouselContent>
       </Carousel>
 
@@ -79,20 +78,16 @@ const LandingPage = () => {
 
       </section>
       {/*Accordion*/}
-      <Accordion type="single" collapsible>
-        {faqs.map((faq,index)=>{
-            return(
+      <Accordion type="multiple" collapsible className='w-full'>
+        {faqs.map((faq,index)=>(
               <AccordionItem key={index} value={`item-${index+1}`}>
                 <AccordionTrigger>{faq.question}</AccordionTrigger>
                 <AccordionContent>{faq.answer}</AccordionContent>
               </AccordionItem>
-            );
-        })}
+          ))}
       </Accordion>
-
-
     </main>
-  )
+  );
 };
 
-export default LandingPage
+export default LandingPage;
